@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Chiong - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dad7d7;
+        }
+
+        .text-with-background {
+            background-color: #cbcaaf; 
+            padding: 10px; 
+            border-radius: 5px; 
+            display: inline-block; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            background-image: url(https://www.trip.me/old-wp-content/2013/11/Green-waterfalls.gif); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 50px 0;
+            padding-left: 30px;
+            text-align: left;
+        }
+
+        h1 {
+            margin: 0;
+            line-height: 2;
+            margin-bottom: 0px;
+            color: #fff;
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        p {
+            margin-top: 0px;
+        }
+
+        nav {
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 10px;
+            color:#9f9c9c;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #463c33;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .container {
+            padding: 20px;
+            display: block;
+            background-color: #fff;
+            border-radius: 10px;
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2)
+        }
+
+        .contact-container {
+            background-color: #bbc589; 
+            color: #e5e6df;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-container p {
+            color: #e5e6df; 
+        }
+
+        .contact-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-text h2 {
+            font-size: 50px; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+        }
+
+        .contact-text p {
+            font-size: 20px; 
+            line-height: 1.5;
+        }
+
+        .resume-text {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .resume-text h2 {
+            font-size: 50px; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+        }
+
+        .resume-text p {
+            font-size: 20px; 
+            line-height: 1.5;
+        }
+
+        .resume-text a {
+            font-size: 20px; 
+            color: #e5e6df; 
+            text-decoration: none;
+        }
+
+        .resume-text a:hover {
+            text-decoration: underline;
+        }
+
+        form label {
+            margin-bottom: 10px; 
+        }
+
+
+        form input,
+        form textarea {
+            margin-bottom: 10px; 
+            background-color: #f9ffe4;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Christian Chiong</h1>
+        </a>
+        <p>Informatics Major | Computer Science & Business Management Minor</p>
+    </header>
+    
+    <nav>
+        <a href="About.html"><span class="text-with-background">About Me</span></a>
+        <a href="Projects.html"><span class="text-with-background">Projects</span></a>
+        <a href="Contact.html"><span class="text-with-background">Contact</span></a>
+    </nav>
+
+    <div class="container contact-container" id="Contact">
+        <div class="contact-text">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> chiongchris1@gmail.com <br>
+                <strong>Alternate Email:</strong> chiongcj@uci.edu <br>
+                <strong>Cell:</strong> (619) 816 - 0189 <br>
+                <div class="resume-text">
+                    <h2>Resume</h2>
+                    <p><strong>Link: </strong><a href="Resume(General).pdf" target="_blank" style="color: #FFFFFF; background-color: #000000;">Here</a></p>
+                </div>
+                <div class="form">
+                    <h2>Message</h2>
+                    <form action="process_form.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <br>
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+        </div>
+        
+    </div>
+
+</body>
+</html>

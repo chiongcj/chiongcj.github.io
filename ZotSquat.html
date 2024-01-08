@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Chiong - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dad7d7;
+        }
+
+        .text-with-background {
+            background-color: #cbcaaf; 
+            padding: 10px; 
+            border-radius: 5px; 
+            display: inline-block; 
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            background-image: url(https://www.trip.me/old-wp-content/2013/11/Green-waterfalls.gif); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            padding: 50px 0;
+            padding-left: 30px;
+            text-align: left;
+        }
+
+        h1 {
+            margin: 0;
+            line-height: 2;
+            margin-bottom: 0px;
+            color: #fff;
+            font-weight: lighter;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none; 
+            color: #fff;
+        }
+
+        p {
+            margin-top: 0px;
+        }
+
+        nav {
+            text-align: right;
+            padding: 10px;
+            margin-bottom: 10px;
+            color:#9f9c9c;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #463c33;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+        
+        .container {
+            padding: 20px;
+            display: block;
+            background-color: #fff;
+            margin-bottom: 10px; 
+            border-radius: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .problem-container {
+            background-color: #bbc589; 
+            color: #e5e6df;
+        }
+
+        .problem-container p {
+            color: #e5e6df; 
+        }
+
+
+        .research-container {
+            background-color: #cbcaaf; 
+            color: #7b9e61;
+        }
+
+        .persona-container {
+            background-color: #bbc589; 
+            color: #e5e6df;
+        }
+
+        .prototype-container {
+            background-color: #cbcaaf; 
+            color: #7b9e61;
+        }
+
+        .research-container p {
+            color: #7b9e61; 
+        }
+
+        .persona-container p {
+            color: #e5e6df; 
+        }
+
+        .prototype-container p {
+            color: #7b9e61; 
+        }
+
+        .problem-text {
+            flex: 1; 
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .problem-text h2 {
+            font-size: 50px; 
+            font-weight: bold; 
+        }
+
+        .problem-text p {
+            font-size: 20px; 
+            line-height: 1.5;
+        }
+
+        .persona-text {
+            flex: 1; 
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .persona-text h2 {
+            font-size: 50px; 
+            font-weight: bold; 
+        }
+
+        .persona-text p {
+            font-size: 16px; 
+            line-height: 1.5;
+        }
+
+        .research-text {
+            flex: 1; 
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .research-text h2 {
+            font-size: 50px; 
+            font-weight: bold; 
+        }
+
+        .research-text p {
+            font-size: 16px; 
+            line-height: 1.5;
+        }
+
+        .prototype-text {
+            flex: 1; 
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .prototype-text h2 {
+            font-size: 50px; 
+            font-weight: bold; 
+        }
+
+        .prototype-text p {
+            font-size: 16px; 
+            line-height: 1.5;
+        }
+
+        .prototype-image {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 300px;
+            margin-top: 100px;
+        }
+
+        .persona-image {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 100px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+    
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <h1>Christian Chiong</h1>
+        </a>
+        <p>Informatics Major | Computer Science & Business Management Minor</p>
+    </header>
+    
+    <nav>
+        <a href="About.html"><span class="text-with-background">About Me</span></a>
+        <a href="Projects.html"><span class="text-with-background">Projects</span></a>
+        <a href="Contact.html"><span class="text-with-background">Contact</span></a>
+    </nav>
+
+    <div class="container problem-container" id="Problem_Statement">
+        <div class="problem-text" >
+            <h2 style="text-align: center;">ZotSquat</h2>
+            <br>
+            <h2 style="text-align: center;">Problem Statement</h2>
+            <p style="text-align: center;">
+                The ARC (Anteater Recreation Center) is often overcrowded <br>
+                and the lines prevent people from being able to utilize <br>
+                their time properly.  This can make the ARC become less <br>
+                and less appealing when they see every machine is <br>
+                practically in use. Considering the ARC helps with students <br>
+                social life and overall health, we want UCI students to easily <br>
+                be able to access the ARC and develop their personal schedules <br>
+                around peak times <br>
+                
+            </p>
+        </div>
+    </div>
+
+    <div class="container research-container" id="Research">
+        <div class="research-text">
+            <h2 style="text-align: center;">Research & Analysis</h2>
+            <p style="text-align: center;">
+                Research methods included using google forms and <br>
+                interviews with the target demographic of UCI students <br>
+                <br>
+                <strong>Came to the two key points that: <br></strong> 
+                <br>
+                Majority of students spend a short amount of time at the gym <br>
+                <br>    
+                Waiting for machines has a major impact on productivity at the gym <br>
+            </p>
+        </div>
+    </div>
+
+    <div class="container persona-container" id="Persona">
+        <div class="persona-text">
+            <h2 style="text-align: center;">Personas</h2>
+            <p style="text-align: center;">
+                Developed two user personas catering towards students <br>
+                experiencing the arc to determine features and problems <br>
+                we want to incorporate and resolve <br>
+            </p>
+            <div class="persona-image" id="Persona_Image">
+                <img src="persona.png" alt="persona model" width="600" height="500">
+            </div>
+        </div>
+    </div>
+
+    <div class="container prototype-container" id="Prototype">
+        <div class="prototype-text">
+            <h2 style="text-align: center;">Prototype</h2>
+            <p style="text-align: center;">
+                Developed Hi-Fidelity prototypes of the app
+            </p>
+            <div class="prototype-image" id="Proto_Image">
+                <img src="phone3.png" alt="phone model" width="500" height="500">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
