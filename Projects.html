@@ -68,94 +68,44 @@
         }
         
         .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* Adjusts the ratio between image and text as needed */
+            gap: 20px; /* Adds some space between the image and the text */
             padding: 20px;
-            display: block;
-            background-color: #bbc589;
-            margin-bottom: 10px;
+            background-color: #fff;
+            margin-bottom: 10px; 
             border-radius: 10px;
             margin-right: 10px;
             margin-left: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .image-grid {
-            margin-top: 50px;
-            margin-bottom: 50px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-content: center;
-        }
-
-        .image-grid-item {
-            text-align: center;
-        }
-
-        .container.contact-container img {
-            border-radius: 10px;
-            max-width: 100%;
+        .container img {
+            width: 100%; /* Ensures the image is responsive and fills the container */
             height: auto;
-            width: 400px;
-            height: 400px;
-            transition: opacity 0.3s; 
+            border-radius: 15px; /* Keeps your border-radius */
         }
 
-        .container.contact-container .overlay-text {
-            color: #fff;
-            font-size: 18px;
-            text-align: center;
+        .proj1-container {
+            background-color: #bbc589; 
+            color: #e5e6df;
         }
 
-        .container.contact-container .image-grid-item {
-            position: relative; 
-            overflow: hidden; 
+        .proj2-container {
+            background-color: #cbcaaf; 
+            color: #7b9e61;
         }
 
-        .container.contact-container .image-grid-item:hover img {
-            opacity: 0.3; 
+        .proj3-container {
+            background-color: #bbc589; 
+            color: #e5e6df;
         }
 
-        .container.contact-container .image-grid-item:hover .image-overlay {
-            opacity: 1; 
+        .proj4-container {
+            background-color: #cbcaaf; 
+            color: #7b9e61;
         }
 
-        .container.contact-container .image-grid-item:hover .overlay-text {
-            display: block; 
-        }
-
-        .container.contact-container .image-grid-item:hover::before {
-            position: absolute;
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff; 
-            padding: 10px; 
-            border-radius: 5px; 
-            font-size: 18px; 
-        }
-
-
-        .container.contact-container .image-grid-item:hover .image-overlay::before {
-            content: "SafeSpace"; 
-            position: absolute;
-            color: #fff;
-            font-size: 40px;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-            transform: translate(-50%, -400%);
-        }
-
-        .container.contact-container .image-grid-item:nth-child(2):hover .image-overlay::before {
-            content: "ZotSquat"; 
-            position: absolute;
-            color: #fff;
-            font-size: 40px;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px;
-            transform: translate(-50%, -400%);
-        }
 
     </style>
 </head>
@@ -172,24 +122,42 @@
         <a href="Projects.html"><span class="text-with-background">Projects</span></a>
         <a href="Contact.html"><span class="text-with-background">Contact</span></a>
     </nav>
-    <div class="container contact-container" id="Contact">
-        <div class="image-grid">
-            <div class="image-grid-item">
-                <a href="SafeSpace.html">
-                    <img src="SafeSpace.png" alt="SafeSpace Logo">
-                    <div class="image-overlay"></div>
-                </a>
-            </div>
 
-            <div class="image-grid-item">
-                <a href="ZotSquat.html">
-                    <img src="ZotSquat.png" alt="ZotSquat Logo">
-                    <div class="image-overlay"></div>
-                </a>
-            </div>
+    <div class="container proj1-container" id="Proj1">
+        <div class="proj1-img">
+            <a href="SafeSpace.html">
+                <img src="SafeSpace.png" alt="SafeSpace Logo" style="width: 200px; height: 200px; margin-left: 75px; border-radius: 15px;">
+                <div class="image-overlay"></div>
+            </a>
+        </div>
+        <div class="proj1-text" style="margin-left: 0px;">
+            <h3>SafeSpace</h3>
+            <p>A mobile application designed to proivde students with a platform engage and interaction with different resouces catered towards improving overall mental health. Safe SafeSpace encourages students to document their daily experiences, thoughts, and reflections through daily journal entries. Tailored to meet the unique needs of the academic community, it provides various features such as customizable templates, privacy settings, and mood tracking. This app aims to support students' mental well-being and personal growth by facilitating a habit of reflective writing.</p>
         </div>
     </div>
-    
+
+    <div class="container proj2-container" id="Proj2">
+        <div class="proj2-text">
+            <a href="ZotSquat.html">
+                <img src="ZotSquat.png" alt="ZotSquat Logo" style="width: 200px; height: 200px; margin-left: 75px; border-radius: 15px;">
+                <div class="image-overlay"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="container proj3-container" id="Proj3">
+        <div class="proj3-text">
+            
+
+        </div>
+    </div>
+
+    <div class="container proj4-container" id="Proj4">
+        <div class="proj4-text">
+            
+
+        </div>
+    </div>
 
 </body>
 </html>
